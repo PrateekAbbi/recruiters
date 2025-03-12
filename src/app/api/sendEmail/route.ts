@@ -1,5 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import path from "path";
+import fs from "fs";
 import "dotenv/config";
 
 export async function POST(req: NextRequest) {
@@ -25,6 +27,11 @@ export async function POST(req: NextRequest) {
         pass: process.env.NEXT_PUBLIC_EMAIL_PASS,
       },
     });
+
+    const filePath = path.join(
+      process.cwd(),
+      "private/docs/Prateek_Abbi_Resume.pdf"
+    );
 
     // Step 2: Configure Email with PDF Attachment
     const mailOptions = {
@@ -84,7 +91,8 @@ export async function POST(req: NextRequest) {
       attachments: [
         {
           filename: "Prateek_Abbi_Resume.pdf",
-          path: "./public/docs/Prateek_Abbi_Resume.pdf", // Local file path
+          content: fs.createReadStream(filePath),
+          contentType: "application/pdf",
         },
       ],
     };

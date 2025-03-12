@@ -13,6 +13,8 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    await connectToDB();
+
     const existingRecruiter = await Recruiter.findOne({ email });
 
     if (existingRecruiter) {
