@@ -44,7 +44,7 @@ MONGODB_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/RecruitersD
 EMAIL_USER=your-email@example.com
 EMAIL_PASS=your-email-password
 ```
-🚨 Replace <username>, <password>, and your-email@example.com with actual credentials.
+🚨 Replace username, passwords, and your-email@example.com with actual credentials.
 
 ### 3️⃣ Run the project locally
 
