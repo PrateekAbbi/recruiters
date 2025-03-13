@@ -43,6 +43,8 @@ const Form: React.FC<FormProps> = ({ setRefreshTrigger, refreshTrigger }) => {
       const updatedRecruiters = cachedData ? JSON.parse(cachedData) : [];
       updatedRecruiters.unshift(data);
       localStorage.setItem("recruiters", JSON.stringify(updatedRecruiters));
+      setName("");
+      setEmail("");
       setRefreshTrigger(!refreshTrigger);
     }
   };
