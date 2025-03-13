@@ -5,7 +5,12 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { Label } from "./ui/label";
 
-const Form = () => {
+interface FormProps {
+  setRefreshTrigger: (arg0: boolean) => void;
+  refreshTrigger: boolean;
+}
+
+const Form: React.FC<FormProps> = ({ setRefreshTrigger, refreshTrigger }) => {
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
 
@@ -31,13 +36,14 @@ const Form = () => {
         body: JSON.stringify(newRecruiter),
       });
 
-      const data = await addedRecruiter.json()
+      const data = await addedRecruiter.json();
 
       // Update cache instead of calling API
       const cachedData = localStorage.getItem("recruiters");
       const updatedRecruiters = cachedData ? JSON.parse(cachedData) : [];
       updatedRecruiters.unshift(data);
       localStorage.setItem("recruiters", JSON.stringify(updatedRecruiters));
+      setRefreshTrigger(!refreshTrigger);
     }
   };
 

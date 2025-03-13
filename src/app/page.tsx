@@ -1,6 +1,6 @@
 "use client"; // ✅ Enables client-side functionality
 
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import Particles from "react-tsparticles";
 import { type Engine } from "tsparticles-engine";
 import { loadSlim } from "tsparticles-slim"; // ✅ Correct import for lightweight performance
@@ -12,6 +12,8 @@ export default function Home() {
   const particlesInit = useCallback(async (engine: Engine) => {
     await loadSlim(engine); // ✅ Loads the slim version of tsparticles
   }, []);
+
+  const [refreshTrigger, setRefreshTrigger] = useState<boolean>(false);
 
   return (
     <div className="relative min-h-screen flex flex-col items-center">
@@ -91,8 +93,11 @@ export default function Home() {
 
       {/* ✅ Content on top of the particles */}
       <div className="relative z-10 flex flex-col gap-6 w-full max-w-5xl mt-5">
-        <Form />
-        <DataTable />
+        <Form
+          setRefreshTrigger={setRefreshTrigger}
+          refreshTrigger={refreshTrigger}
+        />
+        <DataTable refreshTrigger={refreshTrigger} />
       </div>
     </div>
   );

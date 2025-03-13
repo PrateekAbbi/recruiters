@@ -21,7 +21,11 @@ import { Input } from "./ui/input";
 
 import { columns } from "@/components/Column";
 
-export function DataTable() {
+interface DataTableProps {
+  refreshTrigger: boolean;
+}
+
+export function DataTable({ refreshTrigger }: DataTableProps) {
   const [pagination, setPagination] = useState({
     pageIndex: 0,
     pageSize: 10,
@@ -55,7 +59,7 @@ export function DataTable() {
 
   useEffect(() => {
     getData(); // Fetch data only when component mounts
-  }, []);
+  }, [refreshTrigger]);
 
   const table = useReactTable({
     data: recruiters,
