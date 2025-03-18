@@ -43,7 +43,7 @@ export async function POST(req: NextRequest) {
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <p style="color: #000">Dear ${name},</p>
 
-            <p style="color: #000">I hope you are doing well. My name is <strong>Prateek Abbi</strong>, and I recently graduated with a Master’s degree in Computer Science from the <strong>University of Florida</strong> (December 2024), achieving a <strong>GPA of 3.76</strong>. I am reaching out to express my interest in full-time opportunities within your organization, particularly in the areas of <strong>data analysis and full-stack development</strong>.</p>
+            <p style="color: #000">I hope you are doing well. My name is <strong>Prateek Abbi</strong>, and I recently graduated with a Master’s degree in Computer Science from the <strong>University of Florida</strong> (December 2024), achieving a <strong>GPA of 3.76</strong>. I am reaching out to express my interest in working within your organization.</p>
 
             <p style="color: #000"><strong>Please note that I am available to join immediately and open to relocating anywhere in the United States.</strong></p>
 
@@ -73,7 +73,7 @@ export async function POST(req: NextRequest) {
             <a href="https://www.coursera.org/account/accomplishments/professional-cert/7QN9858LGCUL" style="color: #0056b3;">Google Data Analytics</a>
 
             <h3 style="color: #0056b3;">How You Can Help</h3>
-            <p style="color: #000">I would greatly appreciate it if you could review my profile and consider referring me for relevant roles within your organization or connect me with someone who is hiring for <strong>Data Analysts or Software Developers</strong> roles. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
+            <p style="color: #000">I have already applied for the <a href="https://www.amazon.jobs/en/jobs/2831138/software-development-engineer-2025-ai-ml">2025 AI ML</a> role and I would greatly appreciate it if you could review my profile or connect me with someone who is hiring for the role. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
 
             <p style="color: #000">Thank you for your time and consideration.</p>
             
