@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
       from: process.env.NEXT_PUBLIC_EMAIL_USER,
       to: email,
       subject:
-        "Interest in Full-Time Opportunities – Data Analysis | Full-Stack Development",
+        "Application for frontend Engineer role",
       html: `
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <p style="color: #000">Dear ${name},</p>
@@ -48,11 +48,7 @@ export async function POST(req: NextRequest) {
             <p style="color: #000"><strong>Please note that I am available to join immediately and open to relocating anywhere in the United States.</strong></p>
 
             <h3 style="color: #0056b3;">About Me</h3>
-            <p style="color: #000">I have a strong foundation in machine learning and data science, further strengthened by completing <strong>Google’s Data Analytics Professional Certificate</strong>. This certification has equipped me with expertise in <strong>data visualization, statistical analysis, and database management</strong>, all of which I have applied to real-world projects.</p>
-
-            <p style="color: #000">During my time at the <strong>Florida Institute for Cybersecurity and Research</strong>, I contributed to the development of an <strong>AI model for detecting false positives in thermal images</strong> using the FLIR Thermal dataset. Leveraging <strong>PyTorch, NumPy, Pandas, and YOLOv5</strong> for object detection, I ensured efficient and accurate model performance.</p>
-
-            <p style="color: #000">In addition to my experience in data science and machine learning, I have hands-on expertise in full-stack development. At <strong>MindKind Inc.</strong>, I led the development of a backend system using <strong>TypeScript, Node.js, and Firebase</strong>. Alongside designing secure and optimized APIs, I have also built a dashboard with <strong>Next.js</strong> to enhance data visualization for users. Moreover, I have experience working with <strong>MongoDB and PostgreSQL</strong> to efficiently manage and retrieve over 1 TB of stock data.</p>
+            <p style="color: #000">I have a strong foundation and hands-on expertise in full-stack development. At <strong>MindKind Inc.</strong>, I led the development of a backend system using <strong>TypeScript, Node.js, and Firebase</strong>. Alongside designing secure and optimized APIs, I have also built a dashboard with <strong>Next.js</strong> and <strong>Tailwind CSS</strong> to enhance data visualization for users. Moreover, I have experience working with <strong>MongoDB and PostgreSQL</strong> to efficiently manage and retrieve over 1 TB of stock data.</p>
 
             <h3 style="color: #0056b3;">Projects & Certificates</h3>
             <a href="https://propolis.now/" style="color: #0056b3;">Propolis</a> |
@@ -73,7 +69,7 @@ export async function POST(req: NextRequest) {
             <a href="https://www.coursera.org/account/accomplishments/professional-cert/7QN9858LGCUL" style="color: #0056b3;">Google Data Analytics</a>
 
             <h3 style="color: #0056b3;">How You Can Help</h3>
-            <p style="color: #000">I have already applied for the <a href="https://www.amazon.jobs/en/jobs/2831138/software-development-engineer-2025-ai-ml">2025 AI ML</a> role and I would greatly appreciate it if you could review my profile or connect me with someone who is hiring for the role. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
+            <p style="color: #000">I have already applied for the <a href="https://www.amazon.jobs/en/jobs/2874384/front-end-engineer-2025-spc">Frontend Engineer</a> role and I would greatly appreciate it if you could review my profile or connect me with someone who is hiring for the role. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
 
             <p style="color: #000">Thank you for your time and consideration.</p>
             
