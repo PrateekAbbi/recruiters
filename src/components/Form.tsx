@@ -79,7 +79,7 @@ const Form: React.FC<FormProps> = ({ setRefreshTrigger, refreshTrigger }) => {
         </div>
 
         <Button
-          className="w-1/3 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg"
+          className="w-1/3 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg cursor-pointer"
           onClick={handleSend}
         >
           Send
