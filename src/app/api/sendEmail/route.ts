@@ -73,7 +73,7 @@ export async function POST(req: NextRequest) {
             <a href="https://www.coursera.org/account/accomplishments/professional-cert/7QN9858LGCUL" style="color: #0056b3;">Google Data Analytics</a>
 
             <h3 style="color: #0056b3;">How You Can Help</h3>
-            <p style="color: #000">I would greatly appreciate it if you could review my profile and consider referring me for relevant roles within your organization or connect me with someone who is hiring for <strong>Data Analysts or Software Developers</strong> roles. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
+            <p style="color: #000">I would greatly appreciate it if you could review my profile and consider me for relevant roles within your organization or connect me with someone who is hiring for <strong>Data Analysts or Software Developer</strong> roles. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
 
             <p style="color: #000">Thank you for your time and consideration.</p>
             
