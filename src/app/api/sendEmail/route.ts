@@ -71,7 +71,7 @@ export async function POST(req: NextRequest) {
             <a href="https://www.coursera.org/account/accomplishments/professional-cert/7QN9858LGCUL" style="color: #0056b3;">Google Data Analytics</a>
 
             <h3 style="color: #0056b3;">How You Can Help</h3>
-            <p style="color: #000">Now since, I have experience through personal/academic projects, few internships, and certificates, I would really love to know how I can make my profile stand out in this tough job market.</p>
+            <p style="color: #000">Now since, I have experience through personal/academic projects, few internships, and certificates only, I would really love to know how I can make my profile stand out in this tough job market.</p>
             <p style="color: #000">I would really appreciate it if you could review my profile and guide me to keep my first foot in the industry.</p>
             <p style="color: #000">I am available at your convenience for a quick zoom call. Please let me know your availability.</p>
 
