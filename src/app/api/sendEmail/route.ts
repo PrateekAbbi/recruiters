@@ -38,14 +38,12 @@ export async function POST(req: NextRequest) {
       from: process.env.NEXT_PUBLIC_EMAIL_USER,
       to: email,
       subject:
-        "Interest in Full-Time Opportunities – Data Analysis | Full-Stack Development",
+        "Guidance for Full Stack | Data Analysis role",
       html: `
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
             <p style="color: #000">Dear ${name},</p>
 
-            <p style="color: #000">I hope you are doing well. My name is <strong>Prateek Abbi</strong>, and I recently graduated with a Master’s degree in Computer Science from the <strong>University of Florida</strong> (December 2024), achieving a <strong>GPA of 3.76</strong>. I am reaching out to express my interest in full-time opportunities within your organization, particularly in the areas of <strong>data analysis and full-stack development</strong>.</p>
-
-            <p style="color: #000"><strong>Please note that I am available to join immediately and open to relocating anywhere in the United States.</strong></p>
+            <p style="color: #000">I hope you are doing well. My name is <strong>Prateek Abbi</strong>, and I recently graduated with a Master’s degree in Computer Science from the <strong>University of Florida</strong> (December 2024), achieving a <strong>GPA of 3.76</strong>. I am reaching out to seek your valuable guidance for full-stack or data analysis role.</p>
 
             <h3 style="color: #0056b3;">About Me</h3>
             <p style="color: #000">I have a strong foundation in machine learning and data science, further strengthened by completing <strong>Google’s Data Analytics Professional Certificate</strong>. This certification has equipped me with expertise in <strong>data visualization, statistical analysis, and database management</strong>, all of which I have applied to real-world projects.</p>
@@ -73,7 +71,9 @@ export async function POST(req: NextRequest) {
             <a href="https://www.coursera.org/account/accomplishments/professional-cert/7QN9858LGCUL" style="color: #0056b3;">Google Data Analytics</a>
 
             <h3 style="color: #0056b3;">How You Can Help</h3>
-            <p style="color: #000">I would greatly appreciate it if you could review my profile and consider me for relevant roles within your organization or connect me with someone who is hiring for <strong>Data Analysts or Software Developer</strong> roles. I am eager to bring my skills and expertise to a dynamic team and contribute meaningfully.</p>
+            <p style="color: #000">Now since, I have experience through personal/academic projects, few internships, and certificates, I would really love to know how I can make my profile stand out in this tough job market.</p>
+            <p style="color: #000">I would really appreciate it if you could review my profile and guide me to keep my first foot in the industry.</p>
+            <p style="color: #000">I am available at your convenience for a quick zoom call. Please let me know your availability.</p>
 
             <p style="color: #000">Thank you for your time and consideration.</p>
             
